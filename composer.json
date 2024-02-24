@@ -1,5 +1,5 @@
 {
-    "name": "khomerikik/laravel-bitgo-wallet",
+    "name": "oasin/laravel-bitgo-wallet",
     "description": "Bitgo blockchain service integration for laravel",
     "keywords": [
         "bitgo",
