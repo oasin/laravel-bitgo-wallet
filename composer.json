@@ -19,8 +19,8 @@
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.4",
-        "illuminate/contracts": "^10.10",
-        "illuminate/support": "^10.11",
+        "illuminate/contracts": "^10.10|^11.0",
+        "illuminate/support": "^10.0|^11.0",
         "spatie/laravel-package-tools": "^1.9.2",
         "ext-readline": "*"
     },
@@ -28,7 +28,7 @@
         "jetbrains/phpstorm-attributes": "^1.0",
         "laravel/pint": "^1.1",
         "launchdarkly/launchdarkly-php": "^6.0",
-        "nunomaduro/collision": "^7.0",
+        "nunomaduro/collision": "^7.0|^8.1",
         "larastan/larastan": "^2.1",
         "orchestra/testbench": "^8.2",
         "pestphp/pest": "^2.0",
