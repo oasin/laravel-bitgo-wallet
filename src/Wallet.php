@@ -194,7 +194,11 @@ class Wallet extends WalletData implements WalletContract
         $generateWalletData = GenerateWallet::fromArray($options);
 
         $wallet = $this->adapter->generateWallet($this->coin, $generateWalletData);
-        $this->setProperties($wallet);
+        if (array_key_exists('wallet', $wallet)) {
+            $this->setProperties($wallet['wallet']);
+        } else {
+            $this->setProperties($wallet);
+        }
 
         return $this;
     }
@@ -202,7 +206,11 @@ class Wallet extends WalletData implements WalletContract
     public function get(): self
     {
         $wallet = $this->adapter->getWallet($this->coin, $this->id);
-        $this->setProperties($wallet);
+        if (array_key_exists('wallet', $wallet)) {
+            $this->setProperties($wallet['wallet']);
+        } else {
+            $this->setProperties($wallet);
+        }
 
         return $this;
     }
